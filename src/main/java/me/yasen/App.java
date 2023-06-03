@@ -6,6 +6,7 @@ import jakarta.inject.Inject;
 import me.yasen.cli.CliReader;
 import me.yasen.cli.ObjectFromMapReader;
 import me.yasen.commands.*;
+import me.yasen.exceptions.Exception;
 import me.yasen.models.Product;
 import me.yasen.models.Shop;
 import me.yasen.validation.Required;
@@ -67,6 +68,8 @@ public class App {
             Future<Void> result = executorService.submit(command);
             try {
                 result.get();
+            } catch (Exception e) {
+                printStream.printf("Error: %s", e.getMessage());
             } catch (InterruptedException | ExecutionException e) {
                 throw new RuntimeException(e);
             }
