@@ -5,7 +5,7 @@ import me.yasen.*;
 import me.yasen.cli.CliReader;
 import me.yasen.cli.ObjectFromList;
 import me.yasen.exceptions.InsufficientWalletAmount;
-import me.yasen.argument_matchers.DataStorage;
+import me.yasen.storages.DataStorage;
 import me.yasen.models.CashDesk;
 import me.yasen.models.Customer;
 import me.yasen.models.Receipt;

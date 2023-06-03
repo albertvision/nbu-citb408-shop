@@ -1,4 +1,4 @@
-package me.yasen.argument_matchers;
+package me.yasen.storages;
 
 import me.yasen.exceptions.SerializationException;
 

@@ -1,8 +1,8 @@
 package me.yasen;
 
 import com.google.inject.AbstractModule;
-import me.yasen.argument_matchers.DataStorage;
-import me.yasen.argument_matchers.FileStorage;
+import me.yasen.storages.DataStorage;
+import me.yasen.storages.FileStorage;
 
 import java.io.PrintStream;
 import java.util.Scanner;
